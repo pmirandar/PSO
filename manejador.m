@@ -1,7 +1,7 @@
 clear
 close
 
-%Parámetros
+%ParÃ¡metros
 N = 10000;
 d = 6; 
 k = 0;
@@ -35,7 +35,7 @@ mc = 620;
 mb = 2839;
 mt = 168260;
 
-%%/*Valores te�ricos de los elementos de la matriz CKM*/
+%%/*Valores teóricos de los elementos de la matriz CKM*/
 vcb_th = 0.04053;
 vus_th = 0.22650;
 vub_th = 0.00361;
@@ -59,10 +59,10 @@ Sols = 3; %% Numero de soluciones
 Data = fopen('run.dat','a');
 
 for j = 1:Sols
-   [g,gfit] = PSOb(Par,lb,ub);
+   [g,gfit] = PSO(Par,lb,ub);
    disp(['Solution %d',j]);
    disp(j);
-   disp(['Mejor solución : ', num2str(g)]) % Mejor solución, mejor posición
+   disp(['Mejor soluciÃ³n : ', num2str(g)]) % Mejor soluciÃ³n, mejor posiciÃ³n
    disp(['Mejor fitness : ', num2str(gfit)]) % Mejor fitness, mejor costo
    
    if gfit < 4
