@@ -67,6 +67,7 @@ for j = 1:Sols
    
    if gfit < 4
        fprintf(Data,'%2.7f ',gfit);
+       %%              Au  Eu  Ad  Ed  Phi1 Phi2
        fprintf(Data,'%7.7f %7.7f %7.7f %7.7f %7.7f %7.7f\n',g);
    end
 end
